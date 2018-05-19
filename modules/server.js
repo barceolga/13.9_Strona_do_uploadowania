@@ -28,7 +28,7 @@ function start() {
   }
 
   http.createServer(onRequest).listen(9000);
-  console.log("Server is operating on localhost:9000.")
+  console.log("Server is operating on localhost:9000.".blue)
   console.log("The server has been started!".green);
 }
 
