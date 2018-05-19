@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      color: navy;
+      text-align: center;
+    }
+
+}
