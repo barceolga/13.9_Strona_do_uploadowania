@@ -18,9 +18,6 @@ function start() {
       case '/upload':
           handlers.upload(request, response);
           break;
-      case '/show':
-          handlers.show(reuest, response);
-          break;
       default:
           handlers.error(request, response);
           break;
@@ -28,7 +25,7 @@ function start() {
   }
 
   http.createServer(onRequest).listen(9000);
-
+  console.log("Server is operating on localhost:9000.")
   console.log("The server has been started!".green);
 }
 
