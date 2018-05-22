@@ -13,6 +13,7 @@ function start() {
     switch (request.url) { //A switch loop in order to differenciate between the requests
       case '/css/style.css':
           handlers.css(request, response);
+          break;
       case '/':
       case '/start':
           handlers.welcome(request, response);
