@@ -25,8 +25,17 @@ exports.welcome = function(request, response) {
         response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
         response.write(html);
         response.end();
-    })
+    });
+}
 
+exports.css = function(request, response) {
+    fs.readFile('templates/css/style.css', 'binary', function(err, css) {
+      if (err) throw err;
+
+      response.writeHead(200, {"Content-Type": "text/css; charset=utf-8"});
+      response.write(css);
+      response.end();
+    });
 }
 
 exports.show = function(request, response) {
