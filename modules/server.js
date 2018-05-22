@@ -11,6 +11,8 @@ function start() {
     response.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
 
     switch (request.url) { //A switch loop in order to differenciate between the requests
+      case '/css/style.css':
+          handlers.css(request, response);
       case '/':
       case '/start':
           handlers.welcome(request, response);
