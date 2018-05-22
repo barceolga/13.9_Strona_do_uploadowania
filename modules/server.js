@@ -26,7 +26,6 @@ function start() {
           break;
       default:
           handlers.error(request, response);
-          break;
     }
   }
 
